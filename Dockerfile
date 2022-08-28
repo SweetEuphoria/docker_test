@@ -14,9 +14,10 @@ RUN mkdir /project
 
 COPY script/ /project/scripts/
 COPY config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
+COPY dags/ ${AIRFLOW_HOME}/dags/
 
 RUN chmod +x /project/scripts/init.sh
 RUN chmod +x /project/scripts/create_user.py
 
 # Запускаем скрипты
-ENTRYPOINT ["/project/scripts/init.sh","/project/scripts/create_user.py"]
+ENTRYPOINT ["/project/scripts/init.sh","/project/scripts/create_user.sh"]

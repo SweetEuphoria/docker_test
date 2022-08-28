@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-airflow create_user \
+airflow users create \
     --email airflowadmin@example.com \
     --firstname admin \
     --lastname admin \

@@ -11,6 +11,6 @@ airflow users create \
     --email airflowadmin@example.com \
     --firstname admin \
     --lastname admin \
-    --password admin \
+    --password 12345 \
     --role Admin \
     --username admin1

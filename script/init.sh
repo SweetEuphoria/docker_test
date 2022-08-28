@@ -13,4 +13,4 @@ airflow users create \
     --lastname admin \
     --password admin \
     --role Admin \
-    --username admin
+    --username admin1

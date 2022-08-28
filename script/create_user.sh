@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 airflow create_user \
        --username admin \
        --firstname Airflow \

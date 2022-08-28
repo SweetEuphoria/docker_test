@@ -8,6 +8,7 @@ RUN pip install apache-airflow[postgres]==${AIRFLOW_VERSION}
 RUN pip install SQLAlchemy==1.3.23
 RUN pip install markupsafe==2.0.1
 RUN pip install wtforms==2.3.3
+RUN pip install flask-bcrypt
 
 RUN mkdir /project
 

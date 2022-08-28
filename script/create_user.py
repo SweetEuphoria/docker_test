@@ -1,4 +1,4 @@
-#!/bin/ bash
+#!/bin/bash
 airflow create_user \
     --email airflowadmin@example.com \
     --firstname admin \

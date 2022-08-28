@@ -17,6 +17,7 @@ COPY config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
 COPY dags/ /project/dags/
 
 RUN chmod +x /project/scripts/init.sh
+RUN chmod +x /project/scripts/create_user.py
 
 # Запускаем скрипты
 ENTRYPOINT ["/project/scripts/init.sh"]

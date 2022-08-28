@@ -67,7 +67,7 @@ with DAG(dag_id='dag',
     )
 
     email_op = EmailOperator(
-        task_id='send_email',
+        task_id='send_email1',
         to="mariya.sh1@yandex.ru",
         subject="Test Email Please Ignore",
         html_content=None,

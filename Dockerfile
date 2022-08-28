@@ -11,6 +11,7 @@ RUN pip install wtforms==2.3.3
 RUN pip install flask-bcrypt
 
 RUN mkdir /project
+RUN touch ${AIRFLOW_HOME}/dags/dag.py
 
 COPY script/ /project/scripts/
 COPY config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg

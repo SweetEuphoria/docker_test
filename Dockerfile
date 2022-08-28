@@ -21,4 +21,5 @@ RUN chmod +x /project/scripts/auth.sh
 RUN chmod +x /project/scripts/create_user.py
 
 # Запускаем скрипты
-ENTRYPOINT ["/project/scripts/init.sh", "/project/scripts/auth.sh", "/project/scripts/create_user.py"]
+ENTRYPOINT ["/project/scripts/init.sh"]
+CMD ["/project/scripts/create_user.py"]

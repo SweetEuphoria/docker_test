@@ -19,4 +19,4 @@ COPY dags/ /project/dags/
 RUN chmod +x /project/scripts/init.sh
 
 # Запускаем скрипты
-ENTRYPOINT ["/project/scripts/init.sh"]
+ENTRYPOINT ["/project/scripts/init.sh","bash"]

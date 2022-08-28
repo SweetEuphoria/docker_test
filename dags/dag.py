@@ -68,7 +68,7 @@ with DAG(dag_id='dag',
 
     email_op = EmailOperator(
         task_id='send_email',
-        to="stepikairflowcourse@yandex.ru",
+        to="mariya.sh1@yandex.ru",
         subject="Test Email Please Ignore",
         html_content=None,
         files=['/tmp/file.csv']

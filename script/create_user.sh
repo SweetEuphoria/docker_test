@@ -1,8 +1,8 @@
 #!/bin/bash
 airflow create_user \
-       --username admin \
-       --firstname Airflow \
-       --lastname Admin \
-       --email airflowadmin@example.com \
-       --role Admin \
-       --password admin
+    --email airflowadmin@example.com \
+    --firstname admin \
+    --lastname admin \
+    --password admin \
+    --role Admin \
+    --username admin

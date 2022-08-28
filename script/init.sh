@@ -1,10 +1,10 @@
 #!/bin/bash
 
 airflow upgradedb
-sleep 5
+sleep 15
 
 # Запуск шедулера и вебсервера
-airflow webserver & airflow scheduler & 
+airflow webserver & airflow scheduler &
 airflow create_user \
   --email airflowadmin@example.com \
   --firstname admin \
@@ -12,3 +12,4 @@ airflow create_user \
   --password admin \
   --role Admin \
   --username admin
+sleep 15

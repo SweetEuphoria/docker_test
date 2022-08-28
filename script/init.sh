@@ -2,7 +2,7 @@
 
 # Запуск шедулера и вебсервера
 airflow webserver & 
-sleep 5
+sleep 5 &
 airflow users create \
     --email airflowadmin@example.com \
     --firstname admin \
@@ -10,5 +10,5 @@ airflow users create \
     --password 12345 \
     --role Admin \
     --username admin &
-sleep 5
+sleep 5 &
 airflow scheduler

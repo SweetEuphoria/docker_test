@@ -12,5 +12,3 @@ airflow create_user \
     --password admin \
     --role Admin \
     --username admin
-
-exit

@@ -1,11 +1,14 @@
 #!/bin/bash
 
 # Запуск шедулера и вебсервера
-airflow scheduler & airflow webserver & 
+airflow webserver & 
+sleep 5
 airflow users create \
     --email airflowadmin@example.com \
     --firstname admin \
     --lastname admin \
     --password 12345 \
     --role Admin \
-    --username admin1
+    --username admin &
+sleep 5
+airflow scheduler

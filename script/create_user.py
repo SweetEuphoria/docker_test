@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
 airflow users create \
     --email airflowadmin@example.com \
     --firstname admin \
     --lastname admin \
-    --password $AIRFLOW_ADMIN_PASSWORD \
+    --password admin \
     --role Admin \
-    --username $AIRFLOW_ADMIN_USER
+    --username admin

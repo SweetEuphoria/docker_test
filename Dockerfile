@@ -14,7 +14,7 @@ RUN mkdir /project
 
 COPY script/ /project/scripts/
 COPY config/airflow.cfg ${AIRFLOW_HOME}/airflow.cfg
-COPY dags/ /project/dags/
+COPY dags/ /${AIRFLOW_HOME}/dags/
 
 RUN chmod +x /project/scripts/init.sh
 
